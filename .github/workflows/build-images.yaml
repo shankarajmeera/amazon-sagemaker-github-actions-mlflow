@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build and Push training image
-        ## uses: sofianhamiti/composite-action-push-image-ecr-act@main # for using act locally
+        # uses: sofianhamiti/composite-action-push-image-ecr-act@main # for using act locally
         uses: sofianhamiti/composite-action-push-image-ecr@main
         with:
           folder: ${{matrix.folder}}
